@@ -1,0 +1,20 @@
+cat = {'name': 'Zophie', 'age': 7, 'color': 'gray'}
+
+allCats = []
+
+allCats.append({'name': 'Zophie', 'age': 7, 'color': 'gray'})
+allCats.append({'name': 'Blue', 'age': 3, 'color': 'black'})
+allCats.append({'name': 'Grizz', 'age': 6, 'color': 'white'})
+
+print(allCats)
+
+theBoard = {
+    'top-L': " ", 'top-M': " ", "top-R": " ",
+    'mid-L': " ", 'mid-M': " ", "mid-R": " ",
+    'low-L': " ", 'low-M': " ", "low-R": " "}
+
+def printBoard(board):
+    print(board['top-L' + " | " + 'top-M' + " | " + "top-R"])
+    print('---------')
+
+    # etcetcetcetcetcetcetcetcetc
