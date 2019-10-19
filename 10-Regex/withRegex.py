@@ -48,3 +48,8 @@ print(mo.group())
 
 haRegex = re.compile(r'(Ha){3}')
 print(haRegex.search('he said HaHaHa').group())
+
+# can do a range of occurances with {1,5}
+# putting a ? after the {} will make the search non greedy
+# greedy matching makes regex look for the longest possible string to match
+# non-greedy matching matches the shortest string possible
