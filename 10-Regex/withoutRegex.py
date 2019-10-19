@@ -21,3 +21,13 @@ def isPhoneNumber(text):
 
 
 print(isPhoneNumber('415-222-2323'))
+
+message = 'Call me 415-555-1011 tomorrow, or at 415-555-9999.'
+foundNumber = False
+for i in range(len(message)):
+    chunk = message[i:i+12]
+    if isPhoneNumber(chunk):
+        print('PHone number found: ' + chunk)
+        foundNumber = True
+if not foundNumber:
+    print('Could not find any phone numbers.')
