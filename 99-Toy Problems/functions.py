@@ -13,8 +13,10 @@ def is_leap(year):
 is_leap(2000)
 
 
+def print_ints(int):
+    string = ''
+    for i in range(int):
+        string = string + str(i + 1)
+    print(string)
 
-
-# if div by 4 and not div by 100 - TRUE
-# if div by 100 AND not 400 - FALSE
-# if di
+print_ints(3)
